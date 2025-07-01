@@ -19,8 +19,18 @@ function dragOver(event) {
 
 function drop(event) {
     event.preventDefault();
-    this.appendChild(currentDraggedElement);
-    currentDraggedElement = null;
+
+// Bug A 
+  if (this.children.length > 0) {
+    return;
+  }
+
+  if (!currentDraggedElement) {
+    return;
+  }
+
+  this.appendChild(currentDraggedElement);
+  currentDraggedElement = null;
 }
 
 //Event listeners
