@@ -3,7 +3,7 @@ The goal of this project is to fix the bugs and make the user experience more in
 
 The original version had a couple of issues. Bug A let you drop more than one label into the same spot, which wasn’t supposed to happen. Bug B was the reset button not working, the labels didn’t go back to where they started.
 
-I fixed both bugs and added some basic effects to make the user experience a bit more fun and interactive.  (A written explanation is attached onto the assets folder on how I crushed the bugs and how I added the effects).
+I fixed both bugs and added some basic effects to make the user experience a bit more fun and interactive.  (A written explanation is attached on how I fixed the bugs and added the effects.)
 
 ## Installation
 No Installation required. 
