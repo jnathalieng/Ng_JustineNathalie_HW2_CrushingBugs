@@ -66,18 +66,19 @@ labels.forEach(label => {
     label.addEventListener("dragstart", dragStart);
 });
 
-targetZones.forEach(target => {
-    target.addEventListener("dragover", dragOver);
-    target.addEventListener("drop", drop);
-});
+targetZones.forEach(zone => {
+  zone.addEventListener("dragover", dragOver);
+  zone.addEventListener("drop", drop);
 
-    zone.addEventListener("dragenter", () => {
+  // Bonus highlight effect
+  zone.addEventListener("dragenter", () => {
     zone.classList.add("highlight");
   });
 
-    zone.addEventListener("dragleave", () => {
+  zone.addEventListener("dragleave", () => {
     zone.classList.remove("highlight");
   });
+});
 
 //Bug B
 resetBtn.addEventListener("click", resetGame);
