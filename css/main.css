@@ -98,7 +98,7 @@ h1, p {
 }
 
 .label:hover {
-    background-color: #2980b9;
+    background-color: #e74c3c;
     transform: translateY(-2px);
 }
 
@@ -116,7 +116,7 @@ h1, p {
 }
 
 .reset-btn:hover {
-    background-color: #c0392b;
+    background-color: #2980b9;
 }
 
 @media (min-width: 768px) {
