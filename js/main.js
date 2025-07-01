@@ -26,6 +26,8 @@ function dragOver(event) {
 function drop(event) {
     event.preventDefault();
 
+    this.classList.remove("highlight");
+
 // Bug A 
   if (this.children.length > 0) {
     return;
@@ -36,6 +38,9 @@ function drop(event) {
   }
 
   this.appendChild(currentDraggedElement);
+
+  this.classList.add("dropped");
+
   currentDraggedElement = null;
 }
 
@@ -65,6 +70,14 @@ targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
 });
+
+    zone.addEventListener("dragenter", () => {
+    zone.classList.add("highlight");
+  });
+
+    zone.addEventListener("dragleave", () => {
+    zone.classList.remove("highlight");
+  });
 
 //Bug B
 resetBtn.addEventListener("click", resetGame);
