@@ -1,5 +1,5 @@
 # Ng_JustineNathalie_HW2_CrushingBugs
-Crushing bugs and making the user experience better was the main goal for this project. It’s a simple drag-and-drop activity where you match labels to the correct parts of the human body, built with basic HTML, CSS, and JavaScript.
+The goal of this project is to fix the bugs and make the user experience more interactive. It’s a simple drag-and-drop activity where you match labels to the correct parts of the human body, built with basic HTML, CSS, and JavaScript.
 
 The original version had a couple of issues. Bug A let you drop more than one label into the same spot, which wasn’t supposed to happen. Bug B was the reset button not working, the labels didn’t go back to where they started.
 
